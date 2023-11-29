@@ -17,6 +17,7 @@ public class ProductsTest extends BaseTest {
         assertEquals(cartPage.getItemName(), "Sauce Labs Bike Light");
         assertEquals(cartPage.getItemPrice(), "$9.99");
     }
+
     @Test(description = "Check if any product can be removed")
     public void removeProductFromCart() {
         loginPage.open();
@@ -24,6 +25,6 @@ public class ProductsTest extends BaseTest {
         productsPage.addToCart("Sauce Labs Fleece Jacket");
         productsPage.removeFromCart("Sauce Labs Fleece Jacket");
         cartPage.open();
-        assertEquals(cartPage.getNumberOfProducts(),0, "Wrong amount of products");
+        assertEquals(cartPage.getNumberOfProducts(), 0, "Wrong amount of products");
     }
 }
