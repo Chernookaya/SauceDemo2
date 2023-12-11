@@ -26,5 +26,4 @@ public class CheckoutOverviewPage extends BasePage {
     public void buttonFinishClick() {
         driver.findElement(FINISH_BUTTON).click();
     }
-
 }
