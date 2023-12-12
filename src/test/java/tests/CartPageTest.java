@@ -1,15 +1,18 @@
 package tests;
 
 import io.qameta.allure.Step;
+import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
+@Log4j2
 public class CartPageTest extends BaseTest {
     String checkTitle;
 
     @Step("Login main page, add products to cart, cart page opening")
     public void goToCartPage() {
+        log.info("Login main page, add products to cart, cart page opening");
         loginPage.open();
         loginPage.login("standard_user", "secret_sauce");
         productsPage.addToCart("Sauce Labs Bike Light");

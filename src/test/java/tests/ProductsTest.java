@@ -1,10 +1,12 @@
 package tests;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
+@Log4j2
 public class ProductsTest extends BaseTest {
 
     @Test(description = "Check if any products can be bought")

@@ -1,9 +1,11 @@
 package pages;
 
 import io.qameta.allure.Step;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+@Log4j2
 public class CheckoutOverviewPage extends BasePage {
     public static final By TITLE = By.cssSelector(".title");
     public static final By SUMMARY_TAX = By.cssSelector(".summary_tax_label");
@@ -24,7 +26,7 @@ public class CheckoutOverviewPage extends BasePage {
 
     @Step("Finish button clicking")
     public void buttonFinishClick() {
+        log.info("Clicking on Finish button");
         driver.findElement(FINISH_BUTTON).click();
     }
-
 }
