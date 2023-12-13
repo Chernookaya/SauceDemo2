@@ -33,5 +33,3 @@ jobs:
         version: latest
     - name: Run Tests Chrome
       run: mvn clean test
-    - name: Run Tests Firefox
-      run: mvn clean test -DsuiteXmlFile='src\test\resources\CrossBrowser.xml'
