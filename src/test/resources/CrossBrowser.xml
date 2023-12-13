@@ -5,14 +5,14 @@
         <classes>
             <class name="tests.LoginTest"/>
             <class name="tests.ProductsTest"/>
-            <parameter name="browser" value="chrome"></parameter>
+            <parameter name="browser" value="firefox"></parameter>
         </classes>
     </test> <!-- Test -->
     <test name="Firefox">
         <classes>
             <class name="tests.LoginTest"/>
             <class name="tests.ProductsTest"/>
-            <parameter name="browser" value="chrome"></parameter>
+            <parameter name="browser" value="firefox"></parameter>
         </classes>
     </test> <!-- Test -->
 </suite>
