@@ -23,7 +23,7 @@ public class BaseTest {
 
     @Parameters({"browser"})
     @BeforeMethod(description = "Browser setup")
-    public void setup(@Optional("firefox") String browser, ITestContext testContext) {
+    public void setup(@Optional("chrome") String browser, ITestContext testContext) {
         if(browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
