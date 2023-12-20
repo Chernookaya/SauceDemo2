@@ -1,11 +1,12 @@
 package tests;
 
+import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static pages.CheckoutInfoPage.*;
 
-
+@Log4j2
 public class CheckoutInfoPageTest extends BaseTest {
 
     @Test(description = "")
